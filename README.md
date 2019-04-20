@@ -59,7 +59,7 @@ Selenium is an Web Driver that allows you automate the use of your web applicati
 ```
 sudo easy_install selenium
 ```
-Note: easy_install package manager comes pre-installed with most MacOS systems
+*Note: easy_install package manager comes pre-installed with most MacOS systems*
 
 ### Running the Script
 
