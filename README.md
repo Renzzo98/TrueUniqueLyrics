@@ -13,7 +13,7 @@ appeared once already.
 
 This script requires very little prerequisites for it work correctly. Once everything is set up and ready, simply follow the instructions and see the results. 
 
-Note: Ver1.0 only work on Macs (Further Support may be coming soon)
+*Note: Ver1.0 only work on Macs (Further Support may be coming soon)*
 
 ### Prerequisites
 
@@ -36,7 +36,7 @@ On Mac:
 ```
 sudo easy_install pip
 ```
-Note: Most Modern Mac System will come with Python and PIP already installed. However, if you have a outdated verison of Python, you may wish to continue to avoid preventable errors.
+*Note: Most Modern Mac System will come with Python and PIP already installed. However, if you have a outdated verison of Python, you may wish to continue to avoid preventable errors.*
 
 From this moment on, if you correctly installed python 2.7 or 3, you will be have the python package manager, PIP, as it comes with the lastest version of Python. This will allow you to use the PIP command to install the remaining packages needed.
 
@@ -96,10 +96,10 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Roadmap
 
-Fix the following bugs:
-* An Simple issue where the word "The" in the band name will cause it to fail
-* Doesn't work with weird songs like **Crazy Frog**
+- Fix the following bugs:
+  - [ ] An Simple issue where the word "The" in the band name will cause it to fail
+  - [ ] Doesn't work with weird songs like **Crazy Frog**
 
-Apply the script to a website
+- Apply the script to a website
 
 
