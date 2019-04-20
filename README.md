@@ -3,59 +3,74 @@
 An Python Script that searches the lyrics of any song, and remove any duplicate lyrics afer it had
 appeared once already.
 
+### Features
+
+* Works with most popular songs
+* Display "____" where the lyrics got cut out
+* Display how much of the lyrics were repeated and cut (% meter)
+
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+This script requires very little prerequisites for it work correctly. Once everything is set up and ready, simply follow the instructions and see the results. 
+
+Note: Ver1.0 only work on Macs (Further Support may be coming soon)
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+An MacOS device is required to run the script properly due to the system commands used to output the results efficently
 
-```
-Give examples
-```
+Here are things you need to install the software and how to install them
+* Python 2.7 / 3.0
+* Beautiful Soup 4
+* Selenium 2.0
+
+**An Constant and Steady Internet Connection is required to run the scirpt**
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
 
-Say what the step will be
+Python:
+Python will be used for reading the script. Installing python 2.7 or 3 is recommended as an older verison of python will be outdated and required further steps.
+
+On Mac:
+```
+sudo easy_install pip
+```
+Note: Most Modern Mac System will come with Python and PIP already installed. However, if you have a outdated verison of Python, you may wish to continue to avoid preventable errors.
+
+From this moment on, if you correctly installed python 2.7 or 3, you will be have the python package manager, PIP, as it comes with the lastest version of Python. This will allow you to use the PIP command to install the remaining packages needed.
+
+To check your python verison:
+```
+python --version
+```
+If you get a version number(e.g. "Python 2.7.5"), then it means Python is good to go
+
+Beautiful Soup 4 Python:
+Beautiful Soup is a Python library for pulling data out of HTML and XML files. 
 
 ```
-Give the example
+pip install beautifulsoup4
 ```
 
-And repeat
+Selenium:
+Selenium is an Web Driver that allows you automate the use of your web application, including your browser
 
 ```
-until finished
+sudo easy_install selenium
+```
+Note: easy_install package manager comes pre-installed with most MacOS systems
+
+### Running the Script
+
+Once everything is installed, no further installation is required. 
+Simply run the python script in the directory, and following the on-screen directions.
+
+To run the python script:
+```
+python Anti-Duplicate.py
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
@@ -63,19 +78,11 @@ Add additional notes about how to deploy this on a live system
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Hugo Renzzo Olcese** - *All of the work* - [PurpleBooth](https://github.com/PurpleBooth)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
 
@@ -83,31 +90,16 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
 * Inspiration
 * etc
 
 
+## Roadmap
+
+Fix the following bugs:
+* An Simple issue where the word "The" in the band name will cause it to fail
+* Doesn't work with weird songs like **Crazy Frog**
+
+Apply the script to a website
 
 
-
-
-Features:
-
--Works with most songs(popular)
-
--Display "___" where the lyrics got cut
-
--Display how much of the lyrics were repeated and cut
-
--Requires Internet
-
-Bug:
-
--An simple issue where "The " in the band name will cause it to fail
-
--Doesn't work with weird songs such as Crazy Frong
-
-Next Update:
-
--Need to adapt this to a website
