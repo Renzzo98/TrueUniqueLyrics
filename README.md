@@ -29,7 +29,7 @@ Here are things you need to install the software and how to install them
 ### Installing
 
 
-Python:
+**Python:<br />**
 Python will be used for reading the script. Installing python 2.7 or 3 is recommended as an older verison of python will be outdated and required further steps.
 
 On Mac:
@@ -46,14 +46,14 @@ python --version
 ```
 If you get a version number(e.g. "Python 2.7.5"), then it means Python is good to go
 
-Beautiful Soup 4 Python:
+**Beautiful Soup 4 Python:<br />**
 Beautiful Soup is a Python library for pulling data out of HTML and XML files. 
 
 ```
 pip install beautifulsoup4
 ```
 
-Selenium:
+**Selenium:<br />**
 Selenium is an Web Driver that allows you automate the use of your web application, including your browser
 
 ```
