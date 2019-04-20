@@ -74,14 +74,14 @@ python Anti-Duplicate.py
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Python](https://www.python.org) - The Scripting Language used
+* [Beautiful Soup 4](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) - Used to prase the website and collect the key elements of the site markup
+* [Selenium Web Driver](https://www.seleniumhq.org/projects/webdriver/) - Used to prase and run the website needed to collect the lyrics for the song requested
 
 
 ## Authors
 
-* **Hugo Renzzo Olcese** - *All of the work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Hugo Renzzo Olcese** - *All of the work* - [Renzzo98](https://github.com/Renzzo98?tab=repositories)
 
 
 ## License
