@@ -51,7 +51,7 @@ def openURL(url, keyword):
     driver = webdriver.Chrome('/Users/Renzzo/Downloads/chromedriver')
     #driver.implicitily_wait(10)
     driver.get(url)
-    print driver.title
+    #print driver.title
 
     inputElement = driver.find_element_by_name("q")
 
@@ -60,7 +60,7 @@ def openURL(url, keyword):
     inputElement.submit()
 
     WebDriverWait(driver, 10).until(EC.title_contains(keyword))
-    print driver.title
+    #print driver.title
     kword = driver.find_element_by_partial_link_text('All Star')
     kword.click()
     #WebDriverWait(driver, 10).until(EC.title_contains(keyword))
