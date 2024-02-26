@@ -13,14 +13,15 @@ appeared once already.
 
 This script requires very little prerequisites for it work correctly. Once everything is set up and ready, simply follow the instructions and see the results. 
 
-*Note: Ver1.0 only work on Macs (Further Support may be coming soon)*
+__Note__: Ver2.0 only work on Macs (Further Support may be coming soon)*
 
 ### Prerequisites
 
 An MacOS device is required to run the script properly due to the system commands used to output the results efficently
 
 Here are things you need to install the software and how to install them
-* Python 2.7 / 3.0
+
+* Python 3.7 and Above
 * Beautiful Soup 4
 * Selenium 2.0
 
@@ -99,7 +100,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 - Fix the following bugs:
   - [ ] An Simple issue where the word "The" in the band name will cause it to fail
   - [ ] Doesn't work with weird songs like **Crazy Frog**
-
 - Apply the script to a website
 
 

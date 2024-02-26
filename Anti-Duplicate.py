@@ -5,8 +5,7 @@ from selenium import webdriver
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait # available since 2.4.0
 from selenium.webdriver.support import expected_conditions as EC # available since 2.26.0
-import urllib
-import urllib2
+import urllib.request
 
 #import requests
 
@@ -79,10 +78,13 @@ def praseLyrics(title, band):
     newURL = url + band + "/" + title + urlEnd
 
     #test = 'https://www.azlyrics.com/lyrics/smashmouth/allstar.html'
-    page = urllib2.urlopen(newURL)
+    with urllib.request.urlopen(newURL) as response:
+        page = response.read()
+        print(page)
+
     soup = BeautifulSoup(page,"html.parser")
     #name_box = soup.find("div", attrs={"class": None})
-    name_box = soup.find_all("div")[21].text
+    name_box = soup.find_all('div')[22].text
     #print name_box
 
     lyrics = name_box.split("\n")
@@ -160,10 +162,10 @@ Orifile = "Original.txt"
 Newfile = "ReMIXED.txt"
 wordArray = list()
 
-song_title = raw_input("What Song do you want to mixed up?\n")
+song_title = input("What Song do you want to mixed up?\n")
 type(song_title)
 
-band_title = raw_input("What Band sang that sang?\n")
+band_title = input("What Band sang that sang?\n")
 type(band_title)
 
 lyrics = praseLyrics(song_title, band_title)
@@ -186,4 +188,4 @@ openWindow(Newfile)
 
 
 
-    #data.append(x.split())
+#data.append(x.split())
